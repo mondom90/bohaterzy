@@ -1,16 +1,61 @@
 public class Hero {
-        String name;
-        String abilities;
-        int lvl;
-        double damage;
-        boolean fame;
+    private String name;
+    private String abilities;
+    private int lvl;
+    private double damage;
+    private boolean fame;
 
-        Hero(String name, String abilities, int lvl, double damage, boolean fame){
-            this.name=name;
-                this.abilities=abilities;
-                    this.lvl=lvl;
-                            this.damage=damage;
-                                    this.fame=fame;
-
-        }
+    public Hero(String name, String abilities, int lvl, double damage, boolean fame) {
+        this.name = name;
+        this.abilities = abilities;
+        this.lvl = lvl;
+        this.damage = damage;
+        this.fame = fame;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAbilities() {
+        return abilities;
+    }
+
+    public void setAbilities(String abilities) {
+        this.abilities = abilities;
+    }
+
+    public int getLvl() {
+        return lvl;
+    }
+
+    public void setLvl(int lvl) {
+        this.lvl = lvl;
+    }
+
+    public double getDamage() {
+        return damage;
+    }
+
+    public void setDamage(double damage) {
+        this.damage = damage;
+    }
+
+    public boolean getFame() {
+        return fame;
+    }
+
+    public void setFame(boolean fame) {
+        this.fame = fame;
+    }
+
+    public double damagePerSecond() {
+        return lvl*damage;
+
+    }
+}
+
